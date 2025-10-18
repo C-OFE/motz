@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbreakable Words | Motivational Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Fjalla One', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #aaa;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    section {
+      padding: 5rem 10%;
+      border-bottom: 1px solid #111;
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* PRODUCT GRID SECTION */
+    .shop {
+      text-align: center;
+    }
+
+    .shop h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      letter-spacing: 2px;
+    }
+
+    .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* smaller boxes */
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product img {
+  width: 100%;
+  height: 220px; /* smaller height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+   
+    .product:hover {
+      transform: translateY(-8px);
+      border-color: #fff;
+    }
+
+    
+    
+
+    .product-info {
+      padding: 1.5rem;
+      text-align: left;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-info p {
+      color: #aaa;
+      font-size: 0.90rem;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+   .product-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-buttons a {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.product-buttons a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+    /* JOIN SECTION */
+    .join {
+      text-align: center;
+    }
+
+    .join h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .join input {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      background-color: #111;
+      color: #fff;
+      border-bottom: 2px solid #555;
+      width: 250px;
+      text-align: center;
+      transition: border-color 0.3s ease;
+    }
+
+    .join input:focus {
+      border-color: #fff;
+    }
+
+    .join button {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .join button:hover {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+      section {
+        padding: 3rem 5%;
+      }
+      .product img {
+        height: 250px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>motz.co</h1>
+    <p>Stay Hard. Read Harder.</p>
+  </header>
+
+  <section class="about">
+    <p>
+      We believe books can build resilience, discipline, and mental toughness.
+      Every page we publish is a reminder: the mind is your strongest muscle.
+      No excuses. No shortcuts. Just growth.
+    </p>
+  </section>
+
+  <!-- SHOP SECTION -->
+  <section class="shop">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/aa/5c/a9/aa5ca99128fbb281ed63d57fbf90b4c2.jpg" alt="Book 1">
+        <div class="product-info">
+          <h3>diary of the wimpy kid no brainer</h3>
+          <div class="price">90/-</div>
+          <div class="product-buttons">
+  <a href="https://www.instagram.com/motzbooks.co/" target="_blank">Buy Now</a>
+</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81p8vyCsJvL._SY385_.jpg" alt="Book 2">
+        <div class="product-info">
+          <h3>The case book of sherlock holmes</h3>          
+          <div class="price">70/-</div>
+         <div class="product-buttons">
+  <a href="https://www.instagram.com/motzbooks.co/" target="_blank">Buy Now</a>
+  
+</div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51dX2kFl25L._SY445_SX342_FMwebp_.jpg" alt="Book 3">
+        <div class="product-info">
+          <h3>diary of the wimpy kid hot mess</h3>         
+          <div class="price">100/-</div>         
+          <div class="product-buttons">
+  <a href="https://www.instagram.com/motzbooks.co/" target="_blank">Buy Now</a> 
+</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/b8/7f/36/b87f3652ac644b92651fbbe85cd73fbf.jpg" alt="Book 4" width="100">
+        <div class="product-info">
+          <h3>Atomic habits by james clear</h3>
+          
+          <div class="price">150/-</div>
+         <div class="product-buttons">
+  <a href="https://www.instagram.com/motzbooks.co/" target="_blank">Buy Now</a>
+  
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join">
+    <h2>Join The Grind Letter</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    © 2050 Unbreakable Words | Stay Hard.
+  </footer>
+</body>
+</html>
